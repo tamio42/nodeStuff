@@ -1,0 +1,9 @@
+mkdir -p ~/git && cd ~/git
+rm -rf secp256k1
+git clone https://github.com/bitcoin-core/secp256k1
+cd secp256k1
+git checkout ac83be33
+./autogen.sh
+./configure --enable-module-schnorrsig --enable-experimental
+make
+sudo make install
