@@ -1,2 +1,3 @@
-export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
+mkdir -p ~/.local/bin
+cp -p "$(./scripts/bin-path.sh cardano-node)" ~/.local/bin/
+cp -p "$(./scripts/bin-path.sh cardano-cli)" ~/.local/bin/
