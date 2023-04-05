@@ -1,0 +1,8 @@
+cd ~/.local/bin/
+
+# let's create a folder with the version number
+mkdir -p $(cardano-node version | grep -oP '(?<=cardano-node )[0-9\.]+')
+
+# copying files to the created folder
+cp cardano-node $(cardano-node version | grep -oP '(?<=cardano-node )[0-9\.]+')/
+cp cardano-cli $(cardano-node version | grep -oP '(?<=cardano-node )[0-9\.]+')/
