@@ -1,0 +1,7 @@
+ cardano-node run \
+   --topology $HOME/tamio/relays/mainnet/topology.json \
+   --database-path $HOME/tamio/relays/mainnet/db \
+   --socket-path $HOME/tamio/relays/mainnet/db/node.socket \
+   --host-addr 10.0.0.11 \
+   --port 3001 \
+   --config $HOME/tamio/relays/mainnet/config.json
