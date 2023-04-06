@@ -1,3 +1,5 @@
+mkdir -p $HOME/cardano-src/relays/preprod
+cd $HOME/cardano-src/relays/preprod
 curl -O -J https://book.world.dev.cardano.org/environments/preprod/config.json
 curl -O -J https://book.world.dev.cardano.org/environments/preprod/db-sync-config.json
 curl -O -J https://book.world.dev.cardano.org/environments/preprod/submit-api-config.json

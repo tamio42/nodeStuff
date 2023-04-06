@@ -1,0 +1,32 @@
+mkdir -p $HOME/cardano-src/relays
+cd $HOME/cardano-src/relays
+
+mkdir -p $HOME/cardano-src/relays/tesnet
+cd $HOME/cardano-src/relays/tesnet
+curl -O -J https://book.world.dev.cardano.org/environments/preview/config.json
+curl -O -J https://book.world.dev.cardano.org/environments/preview/db-sync-config.json
+curl -O -J https://book.world.dev.cardano.org/environments/preview/submit-api-config.json
+curl -O -J https://book.world.dev.cardano.org/environments/preview/topology.json
+curl -O -J https://book.world.dev.cardano.org/environments/preview/byron-genesis.json
+curl -O -J https://book.world.dev.cardano.org/environments/preview/shelley-genesis.json
+curl -O -J https://book.world.dev.cardano.org/environments/preview/alonzo-genesis.json
+
+mkdir -p $HOME/cardano-src/relays/preprod
+cd $HOME/cardano-src/relays/preprod
+curl -O -J https://book.world.dev.cardano.org/environments/preprod/config.json
+curl -O -J https://book.world.dev.cardano.org/environments/preprod/db-sync-config.json
+curl -O -J https://book.world.dev.cardano.org/environments/preprod/submit-api-config.json
+curl -O -J https://book.world.dev.cardano.org/environments/preprod/topology.json
+curl -O -J https://book.world.dev.cardano.org/environments/preprod/byron-genesis.json
+curl -O -J https://book.world.dev.cardano.org/environments/preprod/shelley-genesis.json
+curl -O -J https://book.world.dev.cardano.org/environments/preprod/alonzo-genesis.json
+
+mkdir -p $HOME/cardano-src/relays/mainnet
+cd $HOME/cardano-src/relays/mainnet
+curl -O -J https://book.world.dev.cardano.org/environments/mainnet/config.json
+curl -O -J https://book.world.dev.cardano.org/environments/mainnet/db-sync-config.json
+curl -O -J https://book.world.dev.cardano.org/environments/mainnet/submit-api-config.json
+curl -O -J https://book.world.dev.cardano.org/environments/mainnet/topology.json
+curl -O -J https://book.world.dev.cardano.org/environments/mainnet/byron-genesis.json
+curl -O -J https://book.world.dev.cardano.org/environments/mainnet/shelley-genesis.json
+curl -O -J https://book.world.dev.cardano.org/environments/mainnet/alonzo-genesis.json      
